@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image to Base64 Converter</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        #base64Output { 
+            margin-top: 20px; 
+            padding: 10px; 
+            background-color: #f0f0f0; 
+            border: dashed 2px #ccc; 
+            word-wrap: break-word; 
+            max-width: 100%;
+            overflow-wrap: break-word;
+        }
+        button { margin-top: 10px; }
+    </style>
+</head>
+<body>
+    <h1>Image to Base64 Converter</h1>
+    <input type="file" id="imageInput" accept="image/png, image/jpeg">
+    <button onclick="convertToBase64()">Convert to Base64</button>
+    <button id="copyButton" style="display:none;">Copy to Clipboard</button>
+    <div id="base64Output">Base64 will appear here...</div>
+    
+</body>
+<script src="app.js"></script>
+</html>
